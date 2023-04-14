@@ -32,8 +32,8 @@ body {
 }
 
 /* ****************** */
-.nav-logo {
 
+.nav-logo {
     font-family: 'Shantell Sans', cursive;
     color: var(--color-yellow);
     font-size: 37px;
@@ -44,34 +44,37 @@ body {
     height: 90px;
     padding: 30px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
-    position: fixed;
+    position:fixed;
     text-decoration: none;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-
-.nav-menu ul {
-    font-size: 14px;
+.nav-menu {
     display: flex;
-    margin-left: 500px;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
+    font-size: 14px;
 
 }
 
-.nav-menu li {
-
-    margin-left: 100px;
+.nav-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .nav-menu-item {
     color: var(--color-light);
     padding: 3px;
-    font-size: 15px;
-
+    
 
 }
 
@@ -81,6 +84,25 @@ body {
 
 }
 
+.nav-menu-btn {
+
+    color: #d1ec35;
+    font-weight: 500;
+    background: none;
+    border: 2px solid var(--color-yellow);
+    padding: 8px 35px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.nav-menu-btn:hover {
+    font-weight: 500;
+    color: #000;
+    background-color: #d1ec35;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
 
 
 .active-scroll {
