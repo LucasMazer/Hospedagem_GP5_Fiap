@@ -23,7 +23,7 @@ body {
 
 :root {
     --color-light: #ffffff;
-    --color-yellow: #d1ec35;
+    --color-: #d1ec35;
     --border-radius: 5px;
     --transition: .5s;
     --gradient-start: rgba(4, 9, 30, 0.404);
@@ -35,7 +35,7 @@ body {
 
 .nav-logo {
     font-family: 'Shantell Sans', cursive;
-    color: var(--color-yellow);
+    color: var(--color-);
     font-size: 37px;
 }
 
@@ -79,17 +79,17 @@ body {
 }
 
 .nav-menu-item:hover {
-    border-bottom: 2px solid #d1ec35;
+    border-bottom: 2px solid var(--color-);
 
 
 }
 
 .nav-menu-btn {
 
-    color: #d1ec35;
+    color: var(--color-);
     font-weight: 500;
     background: none;
-    border: 2px solid var(--color-yellow);
+    border: 2px solid var(--color-);
     padding: 10px 35px;
     border-radius: var(--border-radius);
     transition: var(--transition);
@@ -98,7 +98,7 @@ body {
 .nav-menu-btn:hover {
     font-weight: 500;
     color: #000;
-    background-color: #d1ec35;
+    background-color: var(--color-);
     cursor: pointer;
     transform: scale(1.1);
     
@@ -144,43 +144,24 @@ body {
 
 }
 
-.hero-icon {
-    color: var(--color-yellow);
-    margin-top: 20px;
-    width: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    border-left: 4px;
-    gap: 50px;
-}
-
-.hero-icon i:hover {
-    transform: scale(1.2);
-    transition: var(--transition);
-    color: var(--color-light);
-    cursor: pointer;
-}
 
 .hoteis {
     width: 90%;
     margin: 20px auto;
     min-height: 100vh;
     padding: 20px;
-
+    
 }
 
 .hoteis-title {
     text-align: center;
     font-size: 6vmin;
     margin-bottom: 40px;
-
+    
 }
 
 .hoteis-items {
-
+    
     margin: 20px 0;
     width: 100%;
     display: flex;
@@ -188,7 +169,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-
+    
 }
 
 .hoteis-items div {
@@ -206,54 +187,54 @@ body {
 
 .hoteis-img1 {
     background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-        url(../images/dubai.jpg);
+    url(../images/dubai.jpg);
 }
 
 .hoteis-img2 {
     background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-        url(../images/japao.jpg.jpg)
+    url(../images/japao.jpg.jpg)
 }
 
 .hoteis-img3 {
     background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-        url(../images/canada.jpg.jpg)
+    url(../images/canada.jpg.jpg)
 }
 
 .hoteis-btn {
-    color: #000;
+    color: var(--color-);
     font-weight: 900;
-    background-color: var(--color-yellow);
-    border: 2px solid var(--color-yellow);
+    background:none;
+    border: 2px solid var(--color-);
     padding: 8px 35px;
     border-radius: var(--border-radius);
     transition: var(--transition);
 }
 
 .hoteis-img1:hover {
-
+    
     transform: scale(1.1);
     transition: var(--transition);
-
+    
 }
 
 .hoteis-img2:hover {
-
+    
     transform: scale(1.1);
     transition: var(--transition);
-
+    
 }
 
 .hoteis-img3:hover {
-
+    
     transform: scale(1.1);
     transition: var(--transition);
-
+    
 }
 
 .hoteis a:hover {
-
-    color: var(--color-yellow);
-    background-color: transparent;
+    
+    background-color: var(--color-);
+    color: #000;
 }
 
 
@@ -261,7 +242,7 @@ body {
     width: 100%;
     min-height: 90vh;
     background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-        url(../images/sobre.jpg);
+    url(../images/sobre.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,14 +261,14 @@ body {
     color: var(--color-light);
     margin-left: 30px;
     margin-right: 30px;
-
+    
 }
 
 .sobre-title {
     color: var(--color-light);
     font-size: 7vmin;
     margin-top: 50px;
-
+    
 }
 
 .sobre-text {
@@ -357,7 +338,7 @@ body {
     height: 4px;
     width: 50%;
     border-radius: 2px;
-    background-color: #d1ec35;
+    background-color: var(--color-);
 }
 
 .contact-box-item {
@@ -369,7 +350,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: .5s;
-
+    
 }
 
 .contact-box-item:hover {
@@ -377,7 +358,7 @@ body {
 }
 
 .contact-box-item:focus {
-    background-color: #fff;
+    background-color: var(--color-light);
     border: 2px solid rgba(30, 85, 250, 0.47);
 }
 
@@ -389,7 +370,7 @@ body {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1;
-    background-color: #d0ec358f;
+    background-color: #86962f;
     cursor: pointer;
     outline: none;
     border: none;
@@ -397,26 +378,26 @@ body {
 }
 
 .contact-box-btn:hover {
-    background-color: #d0ec35f5;
+    background-color: var(--color-)
 }
 
 .footer {
     width: 100%;
     min-height: 400px;
     background-color: rgb(0, 0, 0);
-    color: var(--color-yellow);
+    color: var(--color-);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 50px 30px;
     font-size: 0.8rem;
-
+    
 }
 
 .nav-footer,
 div {
     margin: 15px 0;
-
+    
 }
 
 .nav-footer li {
@@ -425,12 +406,12 @@ div {
 
 .nav-footer a {
     text-decoration: none;
-    color: #d1ec35;
+    color: var(--color-);
 }
 
 .nav-footer a:hover {
     color: var(--color-light);
-
+    
 }
 
 .footer-items {
@@ -439,7 +420,7 @@ div {
 
 .footer-items h4 {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-yellow);
+    border-bottom: 1px solid var(--color-);
 }
 
 .footer-items h3 {
@@ -466,12 +447,23 @@ div {
 }
 
 .credits h2 {
-    border-bottom: 1px solid var(--color-yellow);
+    border-bottom: 1px solid var(--color-);
     padding-bottom: 6px;
-    font-size: 15px;
-    color: #d1ec35;
-    margin-bottom: 10px;
-
+    font-size: 20px;
+    color: var(--color-);
+    
+}
+.footer-icon {
+    font-size: 22px;
+    color: var(--color-);
+    display: flex;
+    gap: 10px;
+}
+.footer-icon i:hover {
+    transform: scale(1.2);
+    transition: var(--transition);
+    color: var(--color-light);
+    cursor: pointer;
 }
 
 
@@ -479,13 +471,13 @@ div {
     .galeria-title {
         font-size: 5vmin;
     }
-
+    
     .galeria-items div {
         flex-direction: column;
         width: 80%;
-
+        
     }
-
+    
     .sobre-title {
         font-size: 5vmin;
     }
@@ -493,18 +485,18 @@ div {
     .sobre-text {
         font-size: 13px;
     }
-
+    
     .contact-box {
         grid-template-columns: 1fr;
         margin-top: 150px;
     }
-
+    
     .left {
         height: 200px;
     }
-
+    
     .footer {
         margin-top: 150px;
     }
-
+    
 }
