@@ -23,7 +23,7 @@ body {
 
 :root {
     --color-light: #ffffff;
-    --color-: #d1ec35;
+    --color-: #ebba35;
     --border-radius: 5px;
     --transition: .5s;
     --gradient-start: rgba(4, 9, 30, 0.404);
@@ -145,7 +145,7 @@ body {
 }
 
 
-.hoteis {
+.categorias {
     width: 90%;
     margin: 20px auto;
     min-height: 100vh;
@@ -153,14 +153,14 @@ body {
     
 }
 
-.hoteis-title {
+.categorias-title {
     text-align: center;
     font-size: 6vmin;
     margin-bottom: 40px;
     
 }
 
-.hoteis-items {
+.categorias-items {
     
     margin: 20px 0;
     width: 100%;
@@ -172,7 +172,7 @@ body {
     
 }
 
-.hoteis-items div {
+.categorias-items div {
     width: 30%;
     height: 500px;
     display: flex;
@@ -182,25 +182,26 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 35px;
+    
 }
 
+.categorias-img1 {
+    background-image: linear-gradient(to left, var(--gradient-start), var(--gradient-end)),
+    url(../images/trabalho.jpeg);
+    
+}
 
-.hoteis-img1 {
+.categorias-img2 {
     background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-    url(../images/dubai.jpg);
+    url(../images/lazer.jpeg);
 }
 
-.hoteis-img2 {
-    background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-    url(../images/japao.jpg.jpg)
+.categorias-img3 {
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end)),
+    url(../images/negocios.jpg);
 }
 
-.hoteis-img3 {
-    background-image: linear-gradient(to top, var(--gradient-start), var(--gradient-end)),
-    url(../images/canada.jpg.jpg)
-}
-
-.hoteis-btn {
+.categorias-btn {
     color: var(--color-);
     font-weight: 900;
     background:none;
@@ -210,28 +211,28 @@ body {
     transition: var(--transition);
 }
 
-.hoteis-img1:hover {
+.categorias-img1:hover {
     
     transform: scale(1.1);
     transition: var(--transition);
     
 }
 
-.hoteis-img2:hover {
+.categorias-img2:hover {
     
     transform: scale(1.1);
     transition: var(--transition);
     
 }
 
-.hoteis-img3:hover {
+.categorias-img3:hover {
     
     transform: scale(1.1);
     transition: var(--transition);
     
 }
 
-.hoteis a:hover {
+.categorias a:hover {
     
     background-color: var(--color-);
     color: #000;
@@ -370,7 +371,7 @@ body {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1;
-    background-color: #86962f;
+    background-color: black;
     cursor: pointer;
     outline: none;
     border: none;
