@@ -10,7 +10,7 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Gulliver Traveller - Encontre onde ficar</title>
+    <title>Gulliver Traveller - Encontre onde se hospedar !</title>
 </head>
 
 <body>
@@ -34,7 +34,8 @@
         <h2 class="hero-title">Vamos Viajar?</h2>
         <p class="hero-text">
             Não importa se você está procurando uma escapada romântica para dois, uma aventura em família ou uma viagem
-            de negócios, temos o lugar perfeito para te indicar. <br> Explore nossa seleção de hotéis e reserve hoje mesmo!
+            de negócios, temos o lugar perfeito para te indicar. <br> Explore nossa seleção de hotéis e reserve hoje
+            mesmo!
         </p>
     </header>
 
@@ -83,15 +84,61 @@
         </div>
     </section>
 
-    <section class="contato" id="avaliacao">
-        <div class="contact-box">
+    <section class="avaliacao" id="avaliacao">
+        <div class="avaliacao-box">
             <div class="left"></div>
             <div class="right">
                 <h2>Avaliar Hotéis</h2>
-                <input type="text" class="contact-box-item" placeholder="Nome">
-                <input type="text" class="contact-box-item" placeholder="E-mail">
-                <textarea class="contact-box-item area" placeholder="Mensagem"></textarea>
-                <button class="contact-box-btn">Enviar</button>
+                <div class="avaliacao-form-item">
+                    <select name="avaliacao" id="avaliacao">
+                        <option value="0" disabled selected>Selecionar hotel</option>
+                        <option value="1">Hotel 1</option>
+                        <option value="2">Hotel 2</option>
+                        <option value="3">Hotel 3</option>
+                        <option value="4">Hotel 4</option>
+                        <option value="4">Hotel 5</option>
+                        <option value="4">Hotel 6</option>
+                        <option value="4">Hotel 7</option>
+                        <option value="4">Hotel 8</option>
+                        <option value="4">Hotel 9</option>
+
+                    </select>
+                </div>
+
+                <div class="avaliacao-form-item">
+
+                    <div class="avaliacao-form-radio">
+                        <input type="radio" name="radioStars" id="stars-1" value="1">
+                        <label for="stars-1"><i class="fa-solid fa-star"></i></label>
+                    </div>
+
+                    <div class="box-fotm-radio">
+                        <input type="radio" name="radioStars" id="stars-2" value="2">
+                        <label for="stars-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label>
+                    </div>
+
+                    <div class="box-fotm-radio">
+                        <input type="radio" name="radioStars" id="stars-3" value="3">
+                        <label for="stars-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></label>
+                    </div>
+                    <div class="box-fotm-radio">
+                        <input type="radio" name="radioStars" id="stars-4" value="3">
+                        <label for="stars-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></label>
+                    </div>
+                    <div class="box-fotm-radio">
+                        <input type="radio" name="radioStars" id="stars-5" value="3">
+                        <label for="stars-5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></label>
+                    </div>
+
+                </div>
+
+                <input type="text" class="avaliacao-box-item" placeholder="E-mail" minlength="5">
+                <textarea class="avaliacao-box-item area" placeholder="Mensagem" maxlength="140"></textarea>
+                <button class="avaliacao-box-btn">Enviar</button>
             </div>
         </div>
     </section>
@@ -101,10 +148,9 @@
             <h4>Navegação</h4>
             <nav>
                 <ul class="nav-footer">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#hoteis">Hotéis</a></li>
+                    <li><a href="#avaliacao">Avaliação</a></li>
                 </ul>
             </nav>
 
