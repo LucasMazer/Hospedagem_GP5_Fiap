@@ -297,6 +297,11 @@ select {
 
 }
 
+.stars{
+    color: var(--color-);
+    font-size: 13px;
+}
+
 .avaliacao-form-item {
     display: flex;
     justify-content: space-between;
