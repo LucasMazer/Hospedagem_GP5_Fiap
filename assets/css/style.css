@@ -87,7 +87,7 @@ body {
 .nav-menu-btn {
 
     color: var(--color-);
-    font-weight: 500;
+    font-weight: 600;
     background: none;
     border: 2px solid var(--color-);
     padding: 10px 35px;
@@ -96,8 +96,8 @@ body {
 }
 
 .nav-menu-btn:hover {
-    font-weight: 500;
-    color: #000;
+    font-weight: 600;
+    color: var(--color-light);
     background-color: var(--color-);
     cursor: pointer;
     transform: scale(1.1);
